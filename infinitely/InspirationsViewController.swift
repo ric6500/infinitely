@@ -28,9 +28,11 @@ class InspirationsViewController: UIViewController, UITableViewDelegate, UITable
         return numberOfImages
     }
     
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 400
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let imageViewCell = tableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath) as! InspirationImageCell
