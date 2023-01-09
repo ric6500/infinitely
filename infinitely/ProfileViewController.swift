@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var emailProfileLabel: UILabel!
+    @IBOutlet weak var exitProfileBtn: UIBarButtonItem!
     
     var imagesList = [String]()
     
@@ -28,10 +29,18 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         setupProfileData()
     }
     
+    @IBAction func logoutAction(_ sender: Any) {
+        do {
+          try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
+        }
+    }
+    
 //    check if user is logged in and fetch data from Firebase
     
     func setupProfileData() {
-        if Auth.auth().currentUser == nil {
+        if Auth.auth().currentUser?.uid == nil {
             guard let loginSignUpPage = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "LoginSignUpViewController") as? LoginSignUpViewController else {return}
             
             self.navigationController?.pushViewController(loginSignUpPage, animated: true)

@@ -16,6 +16,8 @@ class LoginSignUpViewController: UIViewController {
     
     @IBOutlet weak var loginSignUpBtn: UIButton!
     
+    var ERROR_EMAIL_ALREADY_IN_USE = "The email address is already in use by another account."
+    
     override func viewDidLoad() {
         setupLoginSignUpBtn()
     }
@@ -34,8 +36,20 @@ class LoginSignUpViewController: UIViewController {
         
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
             if let err = error {
-                print(err.localizedDescription )
-            } else{
+                print(err.localizedDescription)
+                if err.localizedDescription == self.ERROR_EMAIL_ALREADY_IN_USE
+                {
+                    Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                        if let err = error {
+                            print(err.localizedDescription)
+                        }
+                        else {
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                    }
+                }
+            } else
+            {
                 let db = Firestore.firestore()
                 
                 guard let uid = result?.user.uid else {return}
