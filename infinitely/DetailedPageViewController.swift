@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class DetailedPage: UIViewController {
+class DetailedPageViewController: UIViewController {
     
     @IBOutlet weak var detailedImageView: UIImageView!
     @IBOutlet weak var saveBtn: UIButton!

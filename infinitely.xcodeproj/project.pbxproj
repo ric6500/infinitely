@@ -32,7 +32,7 @@
 		45FCE077296C67E9000EAF56 /* infinitelyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FCE076296C67E9000EAF56 /* infinitelyUITestsLaunchTests.swift */; };
 		45FCE084296C6D0A000EAF56 /* InspirationImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FCE083296C6D0A000EAF56 /* InspirationImageCell.swift */; };
 		45FCE086296C6EAE000EAF56 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FCE085296C6EAD000EAF56 /* Extensions.swift */; };
-		45FCE088296C7D7F000EAF56 /* DetailedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FCE087296C7D7F000EAF56 /* DetailedPage.swift */; };
+		45FCE088296C7D7F000EAF56 /* DetailedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FCE087296C7D7F000EAF56 /* DetailedPageViewController.swift */; };
 		45FCE08A296C9AF3000EAF56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45FCE089296C9AF2000EAF56 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +71,7 @@
 		45FCE076296C67E9000EAF56 /* infinitelyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infinitelyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		45FCE083296C6D0A000EAF56 /* InspirationImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationImageCell.swift; sourceTree = "<group>"; };
 		45FCE085296C6EAD000EAF56 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		45FCE087296C7D7F000EAF56 /* DetailedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPage.swift; sourceTree = "<group>"; };
+		45FCE087296C7D7F000EAF56 /* DetailedPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPageViewController.swift; sourceTree = "<group>"; };
 		45FCE089296C9AF2000EAF56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,12 +145,12 @@
 			children = (
 				45FCE053296C67E8000EAF56 /* AppDelegate.swift */,
 				45FCE055296C67E8000EAF56 /* SceneDelegate.swift */,
-				45FCE057296C67E8000EAF56 /* InspirationsViewController.swift */,
-				45FCE083296C6D0A000EAF56 /* InspirationImageCell.swift */,
-				45FCE087296C7D7F000EAF56 /* DetailedPage.swift */,
-				455BBD94296CA31300D8B8A0 /* LoginSignUpViewController.swift */,
-				455BBDA8296CB64200D8B8A0 /* ProfileViewController.swift */,
 				45FCE085296C6EAD000EAF56 /* Extensions.swift */,
+				45FCE083296C6D0A000EAF56 /* InspirationImageCell.swift */,
+				45FCE057296C67E8000EAF56 /* InspirationsViewController.swift */,
+				45FCE087296C7D7F000EAF56 /* DetailedPageViewController.swift */,
+				455BBDA8296CB64200D8B8A0 /* ProfileViewController.swift */,
+				455BBD94296CA31300D8B8A0 /* LoginSignUpViewController.swift */,
 				45FCE059296C67E8000EAF56 /* Main.storyboard */,
 				45FCE05C296C67E9000EAF56 /* Assets.xcassets */,
 				45FCE05E296C67E9000EAF56 /* LaunchScreen.storyboard */,
@@ -334,7 +334,7 @@
 				45FCE058296C67E8000EAF56 /* InspirationsViewController.swift in Sources */,
 				45FCE084296C6D0A000EAF56 /* InspirationImageCell.swift in Sources */,
 				45FCE054296C67E8000EAF56 /* AppDelegate.swift in Sources */,
-				45FCE088296C7D7F000EAF56 /* DetailedPage.swift in Sources */,
+				45FCE088296C7D7F000EAF56 /* DetailedPageViewController.swift in Sources */,
 				45FCE056296C67E8000EAF56 /* SceneDelegate.swift in Sources */,
 				455BBDA9296CB64200D8B8A0 /* ProfileViewController.swift in Sources */,
 				455BBD95296CA31300D8B8A0 /* LoginSignUpViewController.swift in Sources */,

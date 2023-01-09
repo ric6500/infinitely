@@ -48,7 +48,7 @@ class InspirationsViewController: UIViewController, UITableViewDelegate, UITable
         
         let imageViewCell = tableView.cellForRow(at: indexPath) as! InspirationImageCell
         
-        guard let detailedPage = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailedPage") as? DetailedPage else {return}
+        guard let detailedPage = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailedPage") as? DetailedPageViewController else {return}
         
         
         detailedPage.imageUrl = imageViewCell.imageUrl

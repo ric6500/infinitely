@@ -1,14 +1,13 @@
 //
-//  infinitelyTests.swift
+//  DetailedPageTests.swift
 //  infinitelyTests
 //
 //  Created by Riccardo Petrucci on 09/01/23.
 //
 
 import XCTest
-@testable import infinitely
 
-final class infinitelyTests: XCTestCase {
+final class DetailedPageTests: XCTestCase {
 
     override func setUpWithError() throws {
     }
@@ -17,6 +16,7 @@ final class infinitelyTests: XCTestCase {
     }
 
     func testExample() throws {
+        
         
     }
 

@@ -252,10 +252,10 @@
             </objects>
             <point key="canvasLocation" x="1029.7709923664122" y="461.97183098591552"/>
         </scene>
-        <!--Detailed Page-->
+        <!--Detailed Page View Controller-->
         <scene sceneID="GOh-F3-0ka">
             <objects>
-                <viewController storyboardIdentifier="DetailedPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Wm-Yt-nAc" customClass="DetailedPage" customModule="infinitely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailedPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Wm-Yt-nAc" customClass="DetailedPageViewController" customModule="infinitely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OBu-GP-wJS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
