@@ -13,7 +13,6 @@ class InspirationsViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var tableView: UITableView!
     
     
-    
     var numberOfImages = 10
     
     
