@@ -33,7 +33,6 @@ class InspirationsViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let imageViewCell = tableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath) as! InspirationImageCell
         
