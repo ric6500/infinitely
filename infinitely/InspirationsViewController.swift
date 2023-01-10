@@ -84,7 +84,6 @@ class InspirationsViewController: UIViewController, UITableViewDelegate, UITable
         }.resume()
     }
     
-
 }
 
 
